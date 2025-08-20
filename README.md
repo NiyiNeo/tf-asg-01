@@ -2,3 +2,9 @@
 - EC2 LT installs Apache via user_data; public IPs verified in both AZs
 - Terminated one instance → ASG replaced it and restored desired=2
 - MMigrated Terraform state to versioned S3 backend (key: tf-asg-01/terraform.tfstate)
+
+terraform init                          # if already migrated, no backend flags needed
+terraform plan -out=tfplan
+terraform apply tfplan
+# verify, then:
+# terraform destroy
