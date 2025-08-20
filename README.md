@@ -6,5 +6,5 @@
 terraform init                          # if already migrated, no backend flags needed
 terraform plan -out=tfplan
 terraform apply tfplan
-# verify, then:
-# terraform destroy
+verify, then:
+terraform destroy
