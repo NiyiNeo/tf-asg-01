@@ -1,0 +1,4 @@
+- Deployed an Auto Scaling Group across us-east-1a & us-east-1b with min=2/max=5
+- EC2 LT installs Apache via user_data; public IPs verified in both AZs
+- Terminated one instance → ASG replaced it and restored desired=2
+- Migrated Terraform state to versioned S3 backend (bucket: <your-bucket>, key: tf-asg-01/terraform.tfstate)
