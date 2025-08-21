@@ -67,7 +67,7 @@ variable "public_b_az" {
 variable "ssh_cidr" {
   description = "Secure access to EC2"
   type        = string
-  default     = "75.73.183.9/32"
+  default     = "Your-IP-Address/32"
 }
 
 variable "http_cidrs" {
